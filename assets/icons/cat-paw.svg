@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
+  <!-- 逐点复刻参考图左上猫爪：四颗不对称圆趾 + 斜向大椭圆肉垫 -->
+  <circle cx="16" cy="7.2" r="3.75" fill="#FFB7B2" stroke="#21180F" stroke-width="2.15"/>
+  <circle cx="9.5" cy="11.2" r="3.35" fill="#FFB7B2" stroke="#21180F" stroke-width="2.15"/>
+  <circle cx="23.1" cy="12" r="3.35" fill="#FFB7B2" stroke="#21180F" stroke-width="2.15"/>
+  <circle cx="6.4" cy="18.2" r="3.35" fill="#FFB7B2" stroke="#21180F" stroke-width="2.15"/>
+  <ellipse cx="16" cy="20.7" rx="5.05" ry="6.35" transform="rotate(42 16 20.7)" fill="#FFB7B2" stroke="#21180F" stroke-width="2.2"/>
+</svg>
