@@ -34,8 +34,39 @@ function renderCards() {
     const image = card.querySelector("img"); image.src = item.url; image.alt = `${item.name} 设计预览`;
     card.querySelector(".asset-name").textContent = item.name; card.querySelector(".asset-path").textContent = item.directory;
     const copy = card.querySelector(".copy-code"); copy.textContent = item.code; copy.title = `复制 ${item.code}`; copy.addEventListener("click", () => copyCode(item.code, copy));
+    const approveBtn = card.querySelector(".quick-approve-btn");
+    if (approveBtn) {
+      if (review.status === "approved") {
+        approveBtn.classList.add("is-approved");
+        approveBtn.textContent = "✓ 已通过";
+        approveBtn.title = "已确认通过（点击设为待审批）";
+      } else {
+        approveBtn.classList.remove("is-approved");
+        approveBtn.textContent = "✓ 确认";
+        approveBtn.title = "一键确认通过";
+      }
+      approveBtn.addEventListener("click", (event) => {
+        event.stopPropagation();
+        toggleQuickApprove(item);
+      });
+    }
     card.querySelector(".status-label").textContent = statusMeta[review.status].short; card.querySelector(".asset-open").addEventListener("click", () => openReview(item)); el.assetGrid.append(card);
   });
+}
+function toggleQuickApprove(item) {
+  const review = reviewFor(item);
+  const newStatus = review.status === "approved" ? "pending" : "approved";
+  state.reviews.items[item.path] = {
+    code: item.code,
+    contentHash: item.contentHash,
+    status: newStatus,
+    tags: review.tags || [],
+    comment: review.comment || "",
+    updatedAt: new Date().toISOString()
+  };
+  state.reviews.updatedAt = new Date().toISOString();
+  localStorage.setItem(storageKey, JSON.stringify(state.reviews));
+  render();
 }
 function render() { el.assetCount.textContent = state.catalog.length; el.currentFolder.textContent = state.directory === "all" ? "ALL ASSETS" : state.directory; renderTree(); renderCards(); }
 async function copyCode(code, button) { await navigator.clipboard.writeText(code); const previous = button.textContent; button.textContent = "已复制"; window.setTimeout(() => { button.textContent = previous; }, 1100); }

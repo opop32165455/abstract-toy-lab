@@ -132,7 +132,43 @@ h2 { margin: 0; font-size: clamp(35px, 5vw, 67px); line-height: .9; }
 .wall-copy { margin: 0; max-width: 360px; font-size: 12px; line-height: 1.7; color: var(--muted); }
 
 .asset-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 25px 18px; align-items: start; }
-.asset-card { --tilt: -1deg; border: var(--line); background: var(--paper-light); transform: rotate(var(--tilt)); box-shadow: 5px 6px 0 var(--ink); transition: transform .18s ease, box-shadow .18s ease; }
+.asset-card { position: relative; --tilt: -1deg; border: var(--line); background: var(--paper-light); transform: rotate(var(--tilt)); box-shadow: 5px 6px 0 var(--ink); transition: transform .18s ease, box-shadow .18s ease; }
+.quick-approve-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 5;
+  padding: 4px 8px;
+  border: var(--line);
+  background: var(--paper-light);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 var(--ink);
+  transform: rotate(1.5deg);
+  transition: transform .12s ease, background-color .12s ease, box-shadow .12s ease;
+  line-height: 1;
+}
+.quick-approve-btn:hover {
+  background: var(--yellow);
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 3px 3px 0 var(--ink);
+}
+.quick-approve-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+.quick-approve-btn.is-approved {
+  background: var(--mint);
+  color: var(--ink);
+  transform: rotate(-1deg);
+  box-shadow: 2px 2px 0 var(--ink);
+}
+.quick-approve-btn.is-approved:hover {
+  background: #53a388;
+}
 .asset-card:nth-child(3n + 2) { --tilt: .75deg; margin-top: 13px; }
 .asset-card:nth-child(4n) { --tilt: -1.6deg; }
 .asset-card:hover { transform: rotate(0) translateY(-4px); box-shadow: 7px 9px 0 var(--ink); }
