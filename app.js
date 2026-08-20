@@ -32,7 +32,7 @@ function renderCards() {
   items.forEach((item, index) => {
     const review = reviewFor(item), card = el.assetCardTemplate.content.firstElementChild.cloneNode(true); card.dataset.status = review.status;
     card.querySelector(".asset-number").textContent = `NO. ${String(index + 1).padStart(3, "0")} / ${item.kind.toUpperCase()}`;
-    const image = card.querySelector("img"); image.src = item.url; image.alt = `${item.name} 设计预览`;
+    const mainImage = card.querySelector(".asset-preview img"); mainImage.src = item.url; mainImage.alt = `${item.name} 设计预览`;
     card.querySelector(".asset-name").textContent = item.name; card.querySelector(".asset-path").textContent = item.directory;
     const copy = card.querySelector(".copy-code"); copy.textContent = item.code; copy.title = `复制 ${item.code}`; copy.addEventListener("click", () => copyCode(item.code, copy));
     const approveBtn = card.querySelector(".quick-approve-btn");
