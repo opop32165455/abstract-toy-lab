@@ -42,7 +42,7 @@ function renderCards() {
       const stampText = approveBtn.querySelector(".quick-stamp-text");
       if (review.status === "approved") {
         approveBtn.classList.add("is-approved");
-        if (stampText) stampText.textContent = "已通过";
+        if (stampText) stampText.textContent = "✓ 已确认";
         approveBtn.title = "已确认通过（点击设为待审批）";
       } else {
         approveBtn.classList.remove("is-approved");

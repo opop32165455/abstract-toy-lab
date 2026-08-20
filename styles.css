@@ -141,53 +141,70 @@ h2 { margin: 0; font-size: clamp(35px, 5vw, 67px); line-height: .9; }
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  padding: 4px 8px 4px 6px;
+  padding: 4px 9px 4px 7px;
   border: var(--line);
   background: var(--paper-light);
-  color: var(--ink);
+  color: var(--muted);
   font-family: var(--mono);
   font-size: 10px;
   font-weight: 700;
   cursor: pointer;
   box-shadow: 2px 2px 0 var(--ink);
   transform: rotate(1.5deg);
-  transition: transform .12s ease, background-color .12s ease, box-shadow .12s ease;
+  transition: all .15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   line-height: 1;
+  user-select: none;
+}
+.quick-stamp-icon, .quick-stamp-text {
+  pointer-events: none;
 }
 .quick-stamp-icon {
   width: 16px;
   height: 16px;
   object-fit: contain;
   display: block;
-  transition: transform .15s ease;
+  filter: grayscale(100%) opacity(0.6);
+  transition: all .15s ease;
 }
 .quick-approve-btn:hover {
   background: var(--yellow);
-  transform: rotate(0deg) scale(1.05);
+  color: var(--ink);
+  transform: rotate(0deg) scale(1.06);
   box-shadow: 3px 3px 0 var(--ink);
 }
 .quick-approve-btn:hover .quick-stamp-icon {
+  filter: grayscale(0%) opacity(1);
   transform: scale(1.2) rotate(-8deg);
 }
 .quick-approve-btn:active {
-  transform: translate(2px, 2px);
-  box-shadow: none;
+  transform: translate(2px, 2px) scale(0.95) !important;
+  box-shadow: 0 0 0 var(--ink) !important;
 }
+
+/* ── 已确认状态：鲜亮盖章视觉 ── */
 .quick-approve-btn.is-approved {
   background: var(--mint);
   color: var(--ink);
-  transform: rotate(-1deg);
-  box-shadow: 2px 2px 0 var(--ink);
+  transform: rotate(-2deg);
+  box-shadow: 3px 3px 0 var(--ink);
+}
+.quick-approve-btn.is-approved .quick-stamp-icon {
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.15) rotate(-5deg);
 }
 .quick-approve-btn.is-approved:hover {
-  background: #53a388;
+  background: #50aa8c;
+  transform: rotate(0deg) scale(1.06);
 }
 .asset-card:nth-child(3n + 2) { --tilt: .75deg; margin-top: 13px; }
 .asset-card:nth-child(4n) { --tilt: -1.6deg; }
 .asset-card:hover { transform: rotate(0) translateY(-4px); box-shadow: 7px 9px 0 var(--ink); }
-.asset-card[data-status="approved"] { box-shadow: 5px 6px 0 var(--mint); }
+.asset-card[data-status="approved"] { box-shadow: 6px 7px 0 var(--mint); border-color: var(--ink); }
+.asset-card[data-status="approved"] .status-label { background: var(--mint); color: var(--ink); font-weight: 700; border-color: var(--ink); }
 .asset-card[data-status="changes_requested"] { box-shadow: 5px 6px 0 var(--yellow); }
+.asset-card[data-status="changes_requested"] .status-label { background: var(--yellow); color: var(--ink); }
 .asset-card[data-status="rejected"] { box-shadow: 5px 6px 0 var(--red); }
+.asset-card[data-status="rejected"] .status-label { background: var(--red); color: white; }
 .asset-open { display: block; width: 100%; padding: 0; border: 0; background: none; text-align: left; cursor: pointer; }
 .asset-number { display: block; padding: 9px 11px 4px; font-size: 9px; color: var(--muted); }
 .asset-preview { display: grid; place-items: center; height: 180px; margin: 0 11px; background-color: #fff;
