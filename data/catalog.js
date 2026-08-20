@@ -1,6 +1,6 @@
 window.ABSTRACT_TOY_LAB_CATALOG = {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-20T04:47:01.226Z",
+  "generatedAt": "2026-08-20T04:58:12.964Z",
   "roots": [
     "assets"
   ],
@@ -272,14 +272,14 @@ window.ABSTRACT_TOY_LAB_CATALOG = {
       ]
     },
     {
-      "code": "ATL-SYSTEM-AWARD-476221",
+      "code": "ATL-SYSTEM-AWARD-5E9173",
       "path": "assets/icons/system/award.svg",
-      "url": "assets/icons/system/award.svg?v=47622126603d",
+      "url": "assets/icons/system/award.svg?v=5e9173d44353",
       "directory": "assets/icons/system",
       "name": "award",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "47622126603d",
+      "contentHash": "5e9173d44353",
       "defaultTags": [
         "system",
         "vector"
@@ -300,70 +300,70 @@ window.ABSTRACT_TOY_LAB_CATALOG = {
       ]
     },
     {
-      "code": "ATL-SYSTEM-BATTERY-CHARGING-74963B",
+      "code": "ATL-SYSTEM-BATTERY-CHARGING-89F3A9",
       "path": "assets/icons/system/battery-charging.svg",
-      "url": "assets/icons/system/battery-charging.svg?v=74963b442211",
+      "url": "assets/icons/system/battery-charging.svg?v=89f3a9372caa",
       "directory": "assets/icons/system",
       "name": "battery-charging",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "74963b442211",
+      "contentHash": "89f3a9372caa",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-BATTERY-062EC3",
+      "code": "ATL-SYSTEM-BATTERY-4249A9",
       "path": "assets/icons/system/battery.svg",
-      "url": "assets/icons/system/battery.svg?v=062ec3228ed3",
+      "url": "assets/icons/system/battery.svg?v=4249a9cca961",
       "directory": "assets/icons/system",
       "name": "battery",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "062ec3228ed3",
+      "contentHash": "4249a9cca961",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-BELL-0488CB",
+      "code": "ATL-SYSTEM-BELL-B90A1A",
       "path": "assets/icons/system/bell.svg",
-      "url": "assets/icons/system/bell.svg?v=0488cb234fc4",
+      "url": "assets/icons/system/bell.svg?v=b90a1ad6e03b",
       "directory": "assets/icons/system",
       "name": "bell",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "0488cb234fc4",
+      "contentHash": "b90a1ad6e03b",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-BOOKMARK-EE8E9D",
+      "code": "ATL-SYSTEM-BOOKMARK-393C00",
       "path": "assets/icons/system/bookmark.svg",
-      "url": "assets/icons/system/bookmark.svg?v=ee8e9d3a41af",
+      "url": "assets/icons/system/bookmark.svg?v=393c00be1fe7",
       "directory": "assets/icons/system",
       "name": "bookmark",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "ee8e9d3a41af",
+      "contentHash": "393c00be1fe7",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-CAMERA-CA667E",
+      "code": "ATL-SYSTEM-CAMERA-1AB497",
       "path": "assets/icons/system/camera.svg",
-      "url": "assets/icons/system/camera.svg?v=ca667e616b85",
+      "url": "assets/icons/system/camera.svg?v=1ab497e10fec",
       "directory": "assets/icons/system",
       "name": "camera",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "ca667e616b85",
+      "contentHash": "1ab497e10fec",
       "defaultTags": [
         "system",
         "vector"
@@ -398,14 +398,14 @@ window.ABSTRACT_TOY_LAB_CATALOG = {
       ]
     },
     {
-      "code": "ATL-SYSTEM-CLOCK-4269AA",
+      "code": "ATL-SYSTEM-CLOCK-4F03D8",
       "path": "assets/icons/system/clock.svg",
-      "url": "assets/icons/system/clock.svg?v=4269aa7c6810",
+      "url": "assets/icons/system/clock.svg?v=4f03d89d3402",
       "directory": "assets/icons/system",
       "name": "clock",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "4269aa7c6810",
+      "contentHash": "4f03d89d3402",
       "defaultTags": [
         "system",
         "vector"
@@ -426,28 +426,28 @@ window.ABSTRACT_TOY_LAB_CATALOG = {
       ]
     },
     {
-      "code": "ATL-SYSTEM-COINS-54AE5C",
+      "code": "ATL-SYSTEM-COINS-6F7433",
       "path": "assets/icons/system/coins.svg",
-      "url": "assets/icons/system/coins.svg?v=54ae5cfcba37",
+      "url": "assets/icons/system/coins.svg?v=6f743366c18d",
       "directory": "assets/icons/system",
       "name": "coins",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "54ae5cfcba37",
+      "contentHash": "6f743366c18d",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-COMPASS-3E6309",
+      "code": "ATL-SYSTEM-COMPASS-3A77E3",
       "path": "assets/icons/system/compass.svg",
-      "url": "assets/icons/system/compass.svg?v=3e63091fc981",
+      "url": "assets/icons/system/compass.svg?v=3a77e3a128a3",
       "directory": "assets/icons/system",
       "name": "compass",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "3e63091fc981",
+      "contentHash": "3a77e3a128a3",
       "defaultTags": [
         "system",
         "vector"
@@ -468,28 +468,28 @@ window.ABSTRACT_TOY_LAB_CATALOG = {
       ]
     },
     {
-      "code": "ATL-SYSTEM-COPY-CAB3D8",
+      "code": "ATL-SYSTEM-COPY-96F0BB",
       "path": "assets/icons/system/copy.svg",
-      "url": "assets/icons/system/copy.svg?v=cab3d83704af",
+      "url": "assets/icons/system/copy.svg?v=96f0bb072623",
       "directory": "assets/icons/system",
       "name": "copy",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "cab3d83704af",
+      "contentHash": "96f0bb072623",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-CREDIT-CARD-4F8803",
+      "code": "ATL-SYSTEM-CREDIT-CARD-5BBAED",
       "path": "assets/icons/system/credit-card.svg",
-      "url": "assets/icons/system/credit-card.svg?v=4f8803aed4aa",
+      "url": "assets/icons/system/credit-card.svg?v=5bbaed90610d",
       "directory": "assets/icons/system",
       "name": "credit-card",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "4f8803aed4aa",
+      "contentHash": "5bbaed90610d",
       "defaultTags": [
         "system",
         "vector"
@@ -524,98 +524,98 @@ window.ABSTRACT_TOY_LAB_CATALOG = {
       ]
     },
     {
-      "code": "ATL-SYSTEM-EYE-OFF-1585B0",
+      "code": "ATL-SYSTEM-EYE-OFF-6C2754",
       "path": "assets/icons/system/eye-off.svg",
-      "url": "assets/icons/system/eye-off.svg?v=1585b0a6671e",
+      "url": "assets/icons/system/eye-off.svg?v=6c27546e59f0",
       "directory": "assets/icons/system",
       "name": "eye-off",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "1585b0a6671e",
+      "contentHash": "6c27546e59f0",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-EYE-B7FC5F",
+      "code": "ATL-SYSTEM-EYE-192275",
       "path": "assets/icons/system/eye.svg",
-      "url": "assets/icons/system/eye.svg?v=b7fc5ff743c5",
+      "url": "assets/icons/system/eye.svg?v=1922758083a1",
       "directory": "assets/icons/system",
       "name": "eye",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "b7fc5ff743c5",
+      "contentHash": "1922758083a1",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-FILE-IMAGE-D10581",
+      "code": "ATL-SYSTEM-FILE-IMAGE-1DADD9",
       "path": "assets/icons/system/file-image.svg",
-      "url": "assets/icons/system/file-image.svg?v=d10581dbe473",
+      "url": "assets/icons/system/file-image.svg?v=1dadd9ab55c4",
       "directory": "assets/icons/system",
       "name": "file-image",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "d10581dbe473",
+      "contentHash": "1dadd9ab55c4",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-FILE-TEXT-4ABE2A",
+      "code": "ATL-SYSTEM-FILE-TEXT-3F80E1",
       "path": "assets/icons/system/file-text.svg",
-      "url": "assets/icons/system/file-text.svg?v=4abe2abd9e42",
+      "url": "assets/icons/system/file-text.svg?v=3f80e1d1aaba",
       "directory": "assets/icons/system",
       "name": "file-text",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "4abe2abd9e42",
+      "contentHash": "3f80e1d1aaba",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-FILTER-A9E7F3",
+      "code": "ATL-SYSTEM-FILTER-1C6268",
       "path": "assets/icons/system/filter.svg",
-      "url": "assets/icons/system/filter.svg?v=a9e7f371b891",
+      "url": "assets/icons/system/filter.svg?v=1c6268025884",
       "directory": "assets/icons/system",
       "name": "filter",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "a9e7f371b891",
+      "contentHash": "1c6268025884",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-FOLDER-OPEN-9451FA",
+      "code": "ATL-SYSTEM-FOLDER-OPEN-CEE5A3",
       "path": "assets/icons/system/folder-open.svg",
-      "url": "assets/icons/system/folder-open.svg?v=9451fa87f257",
+      "url": "assets/icons/system/folder-open.svg?v=cee5a3b3871c",
       "directory": "assets/icons/system",
       "name": "folder-open",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "9451fa87f257",
+      "contentHash": "cee5a3b3871c",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-FOLDER-6C5D02",
+      "code": "ATL-SYSTEM-FOLDER-51EB2B",
       "path": "assets/icons/system/folder.svg",
-      "url": "assets/icons/system/folder.svg?v=6c5d02387e8a",
+      "url": "assets/icons/system/folder.svg?v=51eb2b4e80d4",
       "directory": "assets/icons/system",
       "name": "folder",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "6c5d02387e8a",
+      "contentHash": "51eb2b4e80d4",
       "defaultTags": [
         "system",
         "vector"
@@ -636,14 +636,14 @@ window.ABSTRACT_TOY_LAB_CATALOG = {
       ]
     },
     {
-      "code": "ATL-SYSTEM-HEART-D2848E",
+      "code": "ATL-SYSTEM-HEART-BB1125",
       "path": "assets/icons/system/heart.svg",
-      "url": "assets/icons/system/heart.svg?v=d2848e2ef0db",
+      "url": "assets/icons/system/heart.svg?v=bb1125cbbb95",
       "directory": "assets/icons/system",
       "name": "heart",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "d2848e2ef0db",
+      "contentHash": "bb1125cbbb95",
       "defaultTags": [
         "system",
         "vector"
@@ -664,14 +664,14 @@ window.ABSTRACT_TOY_LAB_CATALOG = {
       ]
     },
     {
-      "code": "ATL-SYSTEM-HOURGLASS-34B816",
+      "code": "ATL-SYSTEM-HOURGLASS-DAA3F5",
       "path": "assets/icons/system/hourglass.svg",
-      "url": "assets/icons/system/hourglass.svg?v=34b81687ab3b",
+      "url": "assets/icons/system/hourglass.svg?v=daa3f5a4c2fc",
       "directory": "assets/icons/system",
       "name": "hourglass",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "34b81687ab3b",
+      "contentHash": "daa3f5a4c2fc",
       "defaultTags": [
         "system",
         "vector"
@@ -692,70 +692,70 @@ window.ABSTRACT_TOY_LAB_CATALOG = {
       ]
     },
     {
-      "code": "ATL-SYSTEM-KEY-6D2423",
+      "code": "ATL-SYSTEM-KEY-4BF411",
       "path": "assets/icons/system/key.svg",
-      "url": "assets/icons/system/key.svg?v=6d2423ed099a",
+      "url": "assets/icons/system/key.svg?v=4bf41148da11",
       "directory": "assets/icons/system",
       "name": "key",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "6d2423ed099a",
+      "contentHash": "4bf41148da11",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-LINK-BC85C8",
+      "code": "ATL-SYSTEM-LINK-98636F",
       "path": "assets/icons/system/link.svg",
-      "url": "assets/icons/system/link.svg?v=bc85c8bf2ccb",
+      "url": "assets/icons/system/link.svg?v=98636f7ecff0",
       "directory": "assets/icons/system",
       "name": "link",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "bc85c8bf2ccb",
+      "contentHash": "98636f7ecff0",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-LOCATION-8D05AB",
+      "code": "ATL-SYSTEM-LOCATION-F1A570",
       "path": "assets/icons/system/location.svg",
-      "url": "assets/icons/system/location.svg?v=8d05abfb5d83",
+      "url": "assets/icons/system/location.svg?v=f1a570aeac18",
       "directory": "assets/icons/system",
       "name": "location",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "8d05abfb5d83",
+      "contentHash": "f1a570aeac18",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-LOCK-75CA25",
+      "code": "ATL-SYSTEM-LOCK-8B19C9",
       "path": "assets/icons/system/lock.svg",
-      "url": "assets/icons/system/lock.svg?v=75ca2594f00a",
+      "url": "assets/icons/system/lock.svg?v=8b19c95523f1",
       "directory": "assets/icons/system",
       "name": "lock",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "75ca2594f00a",
+      "contentHash": "8b19c95523f1",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-MAIL-016C8C",
+      "code": "ATL-SYSTEM-MAIL-E12585",
       "path": "assets/icons/system/mail.svg",
-      "url": "assets/icons/system/mail.svg?v=016c8c1c7e70",
+      "url": "assets/icons/system/mail.svg?v=e12585c813fd",
       "directory": "assets/icons/system",
       "name": "mail",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "016c8c1c7e70",
+      "contentHash": "e12585c813fd",
       "defaultTags": [
         "system",
         "vector"
@@ -776,42 +776,42 @@ window.ABSTRACT_TOY_LAB_CATALOG = {
       ]
     },
     {
-      "code": "ATL-SYSTEM-MESSAGE-D2EED4",
+      "code": "ATL-SYSTEM-MESSAGE-C3EE3E",
       "path": "assets/icons/system/message.svg",
-      "url": "assets/icons/system/message.svg?v=d2eed44b8dcf",
+      "url": "assets/icons/system/message.svg?v=c3ee3e279ca8",
       "directory": "assets/icons/system",
       "name": "message",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "d2eed44b8dcf",
+      "contentHash": "c3ee3e279ca8",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-MIC-3BF153",
+      "code": "ATL-SYSTEM-MIC-1DEF50",
       "path": "assets/icons/system/mic.svg",
-      "url": "assets/icons/system/mic.svg?v=3bf1535c83fd",
+      "url": "assets/icons/system/mic.svg?v=1def50729857",
       "directory": "assets/icons/system",
       "name": "mic",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "3bf1535c83fd",
+      "contentHash": "1def50729857",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-MOON-AB3999",
+      "code": "ATL-SYSTEM-MOON-3A07C9",
       "path": "assets/icons/system/moon.svg",
-      "url": "assets/icons/system/moon.svg?v=ab3999507fed",
+      "url": "assets/icons/system/moon.svg?v=3a07c9a1d29a",
       "directory": "assets/icons/system",
       "name": "moon",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "ab3999507fed",
+      "contentHash": "3a07c9a1d29a",
       "defaultTags": [
         "system",
         "vector"
@@ -832,28 +832,28 @@ window.ABSTRACT_TOY_LAB_CATALOG = {
       ]
     },
     {
-      "code": "ATL-SYSTEM-PIE-CHART-CFD9BB",
+      "code": "ATL-SYSTEM-PIE-CHART-7C909E",
       "path": "assets/icons/system/pie-chart.svg",
-      "url": "assets/icons/system/pie-chart.svg?v=cfd9bb890b08",
+      "url": "assets/icons/system/pie-chart.svg?v=7c909e144f24",
       "directory": "assets/icons/system",
       "name": "pie-chart",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "cfd9bb890b08",
+      "contentHash": "7c909e144f24",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-REDO-D6EF17",
+      "code": "ATL-SYSTEM-REDO-9DAC70",
       "path": "assets/icons/system/redo.svg",
-      "url": "assets/icons/system/redo.svg?v=d6ef176f2aa2",
+      "url": "assets/icons/system/redo.svg?v=9dac705042ad",
       "directory": "assets/icons/system",
       "name": "redo",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "d6ef176f2aa2",
+      "contentHash": "9dac705042ad",
       "defaultTags": [
         "system",
         "vector"
@@ -874,14 +874,14 @@ window.ABSTRACT_TOY_LAB_CATALOG = {
       ]
     },
     {
-      "code": "ATL-SYSTEM-SAVE-A8FE6E",
+      "code": "ATL-SYSTEM-SAVE-17094B",
       "path": "assets/icons/system/save.svg",
-      "url": "assets/icons/system/save.svg?v=a8fe6ec8b7c2",
+      "url": "assets/icons/system/save.svg?v=17094be5ec9b",
       "directory": "assets/icons/system",
       "name": "save",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "a8fe6ec8b7c2",
+      "contentHash": "17094be5ec9b",
       "defaultTags": [
         "system",
         "vector"
@@ -902,126 +902,126 @@ window.ABSTRACT_TOY_LAB_CATALOG = {
       ]
     },
     {
-      "code": "ATL-SYSTEM-SEND-C863E8",
+      "code": "ATL-SYSTEM-SEND-F6B8A7",
       "path": "assets/icons/system/send.svg",
-      "url": "assets/icons/system/send.svg?v=c863e84792e3",
+      "url": "assets/icons/system/send.svg?v=f6b8a7e28a2f",
       "directory": "assets/icons/system",
       "name": "send",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "c863e84792e3",
+      "contentHash": "f6b8a7e28a2f",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-SHIELD-CHECK-42F511",
+      "code": "ATL-SYSTEM-SHIELD-CHECK-A66268",
       "path": "assets/icons/system/shield-check.svg",
-      "url": "assets/icons/system/shield-check.svg?v=42f511b03c01",
+      "url": "assets/icons/system/shield-check.svg?v=a662680dc090",
       "directory": "assets/icons/system",
       "name": "shield-check",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "42f511b03c01",
+      "contentHash": "a662680dc090",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-SHOPPING-BAG-8AF3EA",
+      "code": "ATL-SYSTEM-SHOPPING-BAG-05D157",
       "path": "assets/icons/system/shopping-bag.svg",
-      "url": "assets/icons/system/shopping-bag.svg?v=8af3ea3c88b1",
+      "url": "assets/icons/system/shopping-bag.svg?v=05d15785a2f6",
       "directory": "assets/icons/system",
       "name": "shopping-bag",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "8af3ea3c88b1",
+      "contentHash": "05d15785a2f6",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-SHOPPING-CART-10CF73",
+      "code": "ATL-SYSTEM-SHOPPING-CART-D45292",
       "path": "assets/icons/system/shopping-cart.svg",
-      "url": "assets/icons/system/shopping-cart.svg?v=10cf73a9275b",
+      "url": "assets/icons/system/shopping-cart.svg?v=d4529245d0a2",
       "directory": "assets/icons/system",
       "name": "shopping-cart",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "10cf73a9275b",
+      "contentHash": "d4529245d0a2",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-SORT-8921CA",
+      "code": "ATL-SYSTEM-SORT-DCF38C",
       "path": "assets/icons/system/sort.svg",
-      "url": "assets/icons/system/sort.svg?v=8921ca9ead9e",
+      "url": "assets/icons/system/sort.svg?v=dcf38c1cbc26",
       "directory": "assets/icons/system",
       "name": "sort",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "8921ca9ead9e",
+      "contentHash": "dcf38c1cbc26",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-STAR-FBEC2D",
+      "code": "ATL-SYSTEM-STAR-65DCD6",
       "path": "assets/icons/system/star.svg",
-      "url": "assets/icons/system/star.svg?v=fbec2d2ae259",
+      "url": "assets/icons/system/star.svg?v=65dcd634873a",
       "directory": "assets/icons/system",
       "name": "star",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "fbec2d2ae259",
+      "contentHash": "65dcd634873a",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-SUN-20CA6A",
+      "code": "ATL-SYSTEM-SUN-D19A0A",
       "path": "assets/icons/system/sun.svg",
-      "url": "assets/icons/system/sun.svg?v=20ca6a95dc00",
+      "url": "assets/icons/system/sun.svg?v=d19a0ad39aa6",
       "directory": "assets/icons/system",
       "name": "sun",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "20ca6a95dc00",
+      "contentHash": "d19a0ad39aa6",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-TAG-87C37B",
+      "code": "ATL-SYSTEM-TAG-C4D0C8",
       "path": "assets/icons/system/tag.svg",
-      "url": "assets/icons/system/tag.svg?v=87c37b9fb83f",
+      "url": "assets/icons/system/tag.svg?v=c4d0c8e8b0b3",
       "directory": "assets/icons/system",
       "name": "tag",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "87c37b9fb83f",
+      "contentHash": "c4d0c8e8b0b3",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-THUMBS-UP-D4EC9F",
+      "code": "ATL-SYSTEM-THUMBS-UP-26D121",
       "path": "assets/icons/system/thumbs-up.svg",
-      "url": "assets/icons/system/thumbs-up.svg?v=d4ec9fb38a95",
+      "url": "assets/icons/system/thumbs-up.svg?v=26d12176acf5",
       "directory": "assets/icons/system",
       "name": "thumbs-up",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "d4ec9fb38a95",
+      "contentHash": "26d12176acf5",
       "defaultTags": [
         "system",
         "vector"
@@ -1042,42 +1042,42 @@ window.ABSTRACT_TOY_LAB_CATALOG = {
       ]
     },
     {
-      "code": "ATL-SYSTEM-TREND-UP-801082",
+      "code": "ATL-SYSTEM-TREND-UP-547196",
       "path": "assets/icons/system/trend-up.svg",
-      "url": "assets/icons/system/trend-up.svg?v=801082826fe1",
+      "url": "assets/icons/system/trend-up.svg?v=547196f579ef",
       "directory": "assets/icons/system",
       "name": "trend-up",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "801082826fe1",
+      "contentHash": "547196f579ef",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-UNDO-3E19D3",
+      "code": "ATL-SYSTEM-UNDO-465AF1",
       "path": "assets/icons/system/undo.svg",
-      "url": "assets/icons/system/undo.svg?v=3e19d345eced",
+      "url": "assets/icons/system/undo.svg?v=465af16ed9a6",
       "directory": "assets/icons/system",
       "name": "undo",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "3e19d345eced",
+      "contentHash": "465af16ed9a6",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-UNLOCK-79B94C",
+      "code": "ATL-SYSTEM-UNLOCK-7F9997",
       "path": "assets/icons/system/unlock.svg",
-      "url": "assets/icons/system/unlock.svg?v=79b94c4c584c",
+      "url": "assets/icons/system/unlock.svg?v=7f999788cadc",
       "directory": "assets/icons/system",
       "name": "unlock",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "79b94c4c584c",
+      "contentHash": "7f999788cadc",
       "defaultTags": [
         "system",
         "vector"
@@ -1098,84 +1098,84 @@ window.ABSTRACT_TOY_LAB_CATALOG = {
       ]
     },
     {
-      "code": "ATL-SYSTEM-USER-ADD-0580FE",
+      "code": "ATL-SYSTEM-USER-ADD-C9269B",
       "path": "assets/icons/system/user-add.svg",
-      "url": "assets/icons/system/user-add.svg?v=0580feb8a302",
+      "url": "assets/icons/system/user-add.svg?v=c9269b8b20b1",
       "directory": "assets/icons/system",
       "name": "user-add",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "0580feb8a302",
+      "contentHash": "c9269b8b20b1",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-USER-F1D9F5",
+      "code": "ATL-SYSTEM-USER-80EAE8",
       "path": "assets/icons/system/user.svg",
-      "url": "assets/icons/system/user.svg?v=f1d9f5b34996",
+      "url": "assets/icons/system/user.svg?v=80eae83e4e23",
       "directory": "assets/icons/system",
       "name": "user",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "f1d9f5b34996",
+      "contentHash": "80eae83e4e23",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-USERS-3BC084",
+      "code": "ATL-SYSTEM-USERS-884D0B",
       "path": "assets/icons/system/users.svg",
-      "url": "assets/icons/system/users.svg?v=3bc084d1c1f3",
+      "url": "assets/icons/system/users.svg?v=884d0b22dde4",
       "directory": "assets/icons/system",
       "name": "users",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "3bc084d1c1f3",
+      "contentHash": "884d0b22dde4",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-VOLUME-HIGH-EE452E",
+      "code": "ATL-SYSTEM-VOLUME-HIGH-B4656C",
       "path": "assets/icons/system/volume-high.svg",
-      "url": "assets/icons/system/volume-high.svg?v=ee452eeab1cf",
+      "url": "assets/icons/system/volume-high.svg?v=b4656cc495ca",
       "directory": "assets/icons/system",
       "name": "volume-high",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "ee452eeab1cf",
+      "contentHash": "b4656cc495ca",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-VOLUME-MUTE-9C970A",
+      "code": "ATL-SYSTEM-VOLUME-MUTE-E152DD",
       "path": "assets/icons/system/volume-mute.svg",
-      "url": "assets/icons/system/volume-mute.svg?v=9c970a3196fd",
+      "url": "assets/icons/system/volume-mute.svg?v=e152dd5aabfe",
       "directory": "assets/icons/system",
       "name": "volume-mute",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "9c970a3196fd",
+      "contentHash": "e152dd5aabfe",
       "defaultTags": [
         "system",
         "vector"
       ]
     },
     {
-      "code": "ATL-SYSTEM-WALLET-333086",
+      "code": "ATL-SYSTEM-WALLET-DDEF3D",
       "path": "assets/icons/system/wallet.svg",
-      "url": "assets/icons/system/wallet.svg?v=333086806484",
+      "url": "assets/icons/system/wallet.svg?v=ddef3ddeb322",
       "directory": "assets/icons/system",
       "name": "wallet",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "333086806484",
+      "contentHash": "ddef3ddeb322",
       "defaultTags": [
         "system",
         "vector"
@@ -1196,14 +1196,14 @@ window.ABSTRACT_TOY_LAB_CATALOG = {
       ]
     },
     {
-      "code": "ATL-SYSTEM-WIFI-5BA780",
+      "code": "ATL-SYSTEM-WIFI-AC40D5",
       "path": "assets/icons/system/wifi.svg",
-      "url": "assets/icons/system/wifi.svg?v=5ba780786121",
+      "url": "assets/icons/system/wifi.svg?v=ac40d530c00e",
       "directory": "assets/icons/system",
       "name": "wifi",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "5ba780786121",
+      "contentHash": "ac40d530c00e",
       "defaultTags": [
         "system",
         "vector"

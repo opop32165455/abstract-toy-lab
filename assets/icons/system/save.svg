@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <path d="M12 12c0-2 2-4 4-4h28l12 12v32c0 2-2 4-4 4H16c-2 0-4-2-4-4V12Z" fill="#FFFDF7" stroke="#2A1B12" stroke-width="5" stroke-linejoin="round"/>
-  <path d="M22 8v16h20V8" fill="#FFC94D" stroke="#2A1B12" stroke-width="4" stroke-linejoin="round"/>
-  <rect x="20" y="34" width="24" height="22" rx="3" fill="#E7F4ED" stroke="#2A1B12" stroke-width="4"/>
-  <path d="M26 40h12" stroke="#2A1B12" stroke-width="3" stroke-linecap="round"/>
+  <path d="M12 14c.5-4 3.5-6 7.5-6h25.5l10.5 11c.5 4 .5 22 0 29.5-1 4-3.5 6.5-7.5 6.5H19c-4 0-6.5-2.5-7-6.5-.5-8-.5-26 0-34Z" fill="#FFFDF7" stroke="#2A1B12" stroke-width="5.5" stroke-linejoin="round"/>
+  <path d="M21 8.5v15c0 1.5 1 2.5 2.5 2.5h16c1.5 0 2.5-1 2.5-2.5v-15" fill="#FFC94D" stroke="#2A1B12" stroke-width="4.5" stroke-linejoin="round"/>
+  <path d="M19.5 35.5c0-1.5 1-2.5 2.5-2.5h19c1.5 0 2.5 1 2.5 2.5v19H19.5v-19Z" fill="#E7F4ED" stroke="#2A1B12" stroke-width="4.5" stroke-linejoin="round"/>
+  <path d="M25 41.5c4-.5 8.5-.5 13 0" stroke="#2A1B12" stroke-width="3.5" stroke-linecap="round"/>
 </svg>
