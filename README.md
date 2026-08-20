@@ -17,8 +17,41 @@
 ## 目录
 
 ```text
-assets/icons/   可直接复制到小程序、Web 或其他项目的 SVG 图标
+assets/               可审批、可复用的 SVG 与图片资产
+references/style/      用户提供的风格参考图，不进入审批目录
+data/catalog.json     根据 assets 自动生成的作品索引与唯一 Code
+data/catalog.js       供静态 HTML 直接加载的目录清单
+data/reviews.js       由 reviews.json 同步出的静态初始审批记录
+data/reviews.json     用户审批状态、标签和批语
+scripts/              目录生成与项目自检脚本
+index.html            本地设计审批台
+DESIGN_RULES.md       人类与 AI 共同遵守的资产规则
 ```
+
+## 打开审批台
+
+这是一个无框架、可直接打开的静态 HTML 页面。直接双击 `index.html` 即可浏览资产和使用字体试验台。
+
+审批内容会暂存在当前浏览器；完成一轮审批后，点击页面右上角的“导出 JSON”，再用导出的文件覆盖 `data/reviews.json`，然后运行一次 `npm run catalog` 以同步静态初始数据。下次也可以直接用“导入 JSON”继续该轮审批。静态 HTML 没有权限自行改写磁盘文件，因此这个导入/导出步骤是有意保留的。
+
+## 常用操作
+
+```bash
+npm run catalog  # 新增或移动作品后，单独重建静态目录清单
+npm run check    # 检查目录、Code 唯一性与审批数据格式
+```
+
+每件作品都有唯一的 `ATL-...` Code。把 Code 复制给另一个 AI，它应先通过 `data/catalog.json` 定位作品，再结合 `data/reviews.json` 的批语进行修改。完整规则见 `DESIGN_RULES.md`。
+
+## AB 荷包字体试验台
+
+页面已内置 AB 荷包目前加载的四套字体，文件位于 `assets/fonts/`：
+
+- ZCOOL KuaiLe：中文标题
+- Kiwi Maru Medium：日文正文
+- Baloo 2 Bold：英文、数字和金额
+
+可分别指定中文、日文、英文/数字的字体，也可用“全篇单一字体”检查某一字体是否有对应字符的原生字形（浏览器回退会在页面中直接呈现）。
 
 ## 当前资产
 
@@ -27,13 +60,21 @@ assets/icons/   可直接复制到小程序、Web 或其他项目的 SVG 图标
 - `settings.svg` / `chart.svg` / `settle.svg`：基础操作图标
 - `add.svg` / `add-light.svg`：添加按钮图标
 - `share.svg`：分享图标
+- `assets/icons/system/`：关闭、返回、前进、确认、取消、搜索、菜单、更多、信息、警告、刷新、主页、编辑、删除、上传与下载等系统图标
+- `assets/icons/calendar/`：日历、打卡、连续记录与提醒等轻量图标
+- `assets/components/check-in/`：周进度、月历、习惯卡与打卡成功状态等可组合 UI 参考
+
+## 风格参考
+
+`references/style/cat-watercolor/` 保存用户提供的猫咪水彩插画参考。只学习其暖色、圆润轮廓、手绘抖动、动作线与留白，不直接复刻角色、姿势、文字、签名或构图。
 
 ## 使用约定
 
 1. 新图标先放入 `assets/icons/`，保持单色或少色、圆角和清晰轮廓。
 2. 颜色由使用方通过 CSS 或 SVG 属性适配，不在图标中写死一套新的品牌色。
-3. 不为尚未出现的页面提前搭建组件、构建脚本或依赖；需要跨项目复用时再补最小的组件封装。
+3. 不为尚未出现的页面提前搭建组件或引入依赖；需要跨项目复用时再补最小的组件封装。
 4. 每次新增资产说明用途，并保持文件名使用小写 kebab-case。
+5. 新增或实质修改的作品必须回到 `pending`，只能由用户在审批台标记为 `approved`。
 
 ## 版本
 

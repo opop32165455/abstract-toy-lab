@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abstract Toy Lab 本地设计资产审批台">
+    <title>Abstract Toy Lab · 设计审批台</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="paper-noise" aria-hidden="true"></div>
+    <header class="masthead">
+      <div>
+        <p class="eyebrow">STATIC DESIGN SHEET / 设计档案</p>
+        <h1>ABSTRACT TOY LAB</h1>
+      </div>
+      <p class="header-note">资产索引 · 审批批语 · 字体试验</p>
+    </header>
+
+    <nav class="work-tabs" aria-label="设计工作面">
+      <button class="work-tab active" type="button" data-tab="assets" aria-selected="true">设计资产 <span>SVG · 图片</span></button>
+      <button class="work-tab" type="button" data-tab="fonts" aria-selected="false">字体实验室 <span>AB 荷包字体</span></button>
+    </nav>
+
+    <main id="assetsWorkspace" class="workspace">
+      <aside class="catalog-panel" aria-label="设计目录">
+        <div class="panel-heading">
+          <span>INDEX / 目录</span>
+          <span id="assetCount" class="count-chip">0</span>
+        </div>
+        <nav id="directoryTree" class="directory-tree"></nav>
+        <div class="legend">
+          <p class="legend-title">审批状态</p>
+          <span><i class="status-pin approved"></i>已通过</span>
+          <span><i class="status-pin changes_requested"></i>需修改</span>
+          <span><i class="status-pin rejected"></i>不采用</span>
+          <span><i class="status-pin pending"></i>待审批</span>
+        </div>
+      </aside>
+
+      <section class="review-wall">
+        <div class="toolbar">
+          <label class="search-wrap">
+            <span>SEARCH</span>
+            <input id="searchInput" type="search" placeholder="Code、名称、路径或标签" autocomplete="off">
+          </label>
+          <label class="filter-wrap">
+            <span>STATUS</span>
+            <select id="statusFilter">
+              <option value="all">全部状态</option>
+              <option value="pending">待审批</option>
+              <option value="approved">已通过</option>
+              <option value="changes_requested">需修改</option>
+              <option value="rejected">不采用</option>
+            </select>
+          </label>
+          <button id="refreshButton" class="utility-button" type="button">重载目录</button>
+          <button id="importButton" class="utility-button" type="button">导入 JSON</button>
+          <button id="exportButton" class="utility-button ink" type="button">导出 JSON</button>
+          <input id="importInput" type="file" accept="application/json" hidden>
+        </div>
+
+        <div class="wall-intro">
+          <div>
+            <p id="currentFolder" class="eyebrow">ALL ASSETS</p>
+            <h2>审批墙</h2>
+          </div>
+          <p class="wall-copy">选择作品记录审批意见。静态页会先保存在当前浏览器，完成一轮审批后导出 JSON 回写项目。</p>
+        </div>
+
+        <div id="assetGrid" class="asset-grid" aria-live="polite"></div>
+        <div id="emptyState" class="empty-state" hidden>
+          <strong>这里暂时没有作品</strong>
+          <span>可以调整筛选条件，或把新文件放进 assets 目录。</span>
+        </div>
+
+      </section>
+    </main>
+
+    <section id="fontsWorkspace" class="font-workspace" hidden aria-labelledby="fontLabTitle">
+      <div class="font-lab-heading">
+        <div>
+          <p class="eyebrow">TYPE TEST / AB PURSE FONTS</p>
+          <h2 id="fontLabTitle">字体实验室</h2>
+        </div>
+        <p>字体卡右上角的语言 Tag 可独立开关；重复点击即可取消。没有被任何字体接管的语言，会自动交给系统回退字体。</p>
+      </div>
+
+      <div id="sampleTabs" class="sample-tabs" aria-label="文章样本"></div>
+      <div class="font-stage">
+        <article id="fontPreview" class="font-preview" aria-live="polite"></article>
+        <aside class="font-notes">
+          <strong>当前搭配</strong>
+          <p id="fontRecipe"></p>
+          <p class="coverage-note">每段文字已手动标注语言：中文不会再被日文字体误接管。选择“全篇”后，可观察字体缺字时的浏览器回退。</p>
+        </aside>
+      </div>
+
+      <section class="font-picker" aria-labelledby="pickerTitle">
+        <div class="picker-heading">
+          <div>
+            <p class="eyebrow">CHOOSE TYPE / 点击选择</p>
+            <h3 id="pickerTitle">点语言 Tag 配字，点整张卡快速开关</h3>
+          </div>
+        </div>
+        <div id="fontRoster" class="font-roster" aria-label="可选择的字体"></div>
+      </section>
+    </section>
+
+    <dialog id="reviewDialog" class="review-dialog">
+      <form method="dialog" class="dialog-shell">
+        <button class="dialog-close" value="close" aria-label="关闭详情">CLOSE</button>
+        <section class="preview-stage">
+          <div class="preview-checker">
+            <img id="detailImage" alt="">
+          </div>
+          <div class="preview-meta">
+            <span id="detailKind"></span>
+            <span id="detailDimensions">原始预览</span>
+          </div>
+        </section>
+        <section class="review-sheet">
+          <p id="detailPath" class="eyebrow"></p>
+          <h2 id="detailName"></h2>
+          <div class="code-strip">
+            <code id="detailCode"></code>
+            <button id="copyDetailCode" type="button">复制 Code</button>
+          </div>
+
+          <fieldset class="status-stamps">
+            <legend>审批结论</legend>
+            <label><input type="radio" name="status" value="approved"><span>已通过</span></label>
+            <label><input type="radio" name="status" value="changes_requested"><span>需修改</span></label>
+            <label><input type="radio" name="status" value="rejected"><span>不采用</span></label>
+            <label><input type="radio" name="status" value="pending"><span>待审批</span></label>
+          </fieldset>
+
+          <label class="field-label" for="tagInput">标签 <small>用逗号分隔</small></label>
+          <input id="tagInput" class="sheet-input" placeholder="icon, animal, warm">
+
+          <label class="field-label" for="commentInput">批语 / 修改方向</label>
+          <textarea id="commentInput" class="sheet-input" rows="7" placeholder="例如：轮廓再松一点，保留现在的粉色肉垫；第二版需要更漫画化。"></textarea>
+
+          <div class="sheet-footer">
+            <span id="detailUpdated">尚未审批</span>
+            <button id="saveReviewButton" class="save-button" type="button">暂存这条审批</button>
+          </div>
+        </section>
+      </form>
+    </dialog>
+
+    <template id="assetCardTemplate">
+      <article class="asset-card">
+        <button class="asset-open" type="button">
+          <span class="asset-number"></span>
+          <span class="asset-preview"><img alt=""></span>
+          <span class="asset-info">
+            <strong class="asset-name"></strong>
+            <span class="asset-path"></span>
+          </span>
+        </button>
+        <div class="asset-footer">
+          <button class="copy-code" type="button"></button>
+          <span class="status-label"></span>
+        </div>
+      </article>
+    </template>
+
+    <script src="data/catalog.js"></script>
+    <script src="data/reviews.js"></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

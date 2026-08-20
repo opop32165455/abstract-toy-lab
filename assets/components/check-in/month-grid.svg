@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" fill="none">
+  <path d="M28 29c56-13 250-11 303 1 9 55 8 196-4 239-58 10-248 10-299-2-9-54-9-190 0-238Z" fill="#FFFDF7" stroke="#2A1B12" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M27 78c70 8 238 7 305-1l-1-47c-55-12-247-14-303-1l-1 49Z" fill="#F39AA9" stroke="#2A1B12" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M86 16v29M274 16v29" stroke="#2A1B12" stroke-width="10" stroke-linecap="round"/>
+  <path d="M58 113h244M58 150h244M58 187h244M58 224h244" stroke="#EADDC7" stroke-width="3" stroke-linecap="round"/>
+  <path d="M92 101v139M126 101v139M160 101v139M194 101v139M228 101v139M262 101v139" stroke="#EADDC7" stroke-width="3" stroke-linecap="round"/>
+  <g fill="#FFC94D" stroke="#2A1B12" stroke-width="3">
+    <circle cx="75" cy="132" r="10"/><circle cx="109" cy="132" r="10"/><circle cx="143" cy="169" r="10"/>
+    <circle cx="177" cy="169" r="10"/><circle cx="211" cy="206" r="10"/><circle cx="245" cy="206" r="10"/>
+  </g>
+  <g stroke="#FFFDF7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m69 132 4 4 8-9M103 132l4 4 8-9M137 169l4 4 8-9M171 169l4 4 8-9M205 206l4 4 8-9M239 206l4 4 8-9"/>
+  </g>
+  <path d="M272 111c13-4 26 3 28 15 2 13-7 24-20 24-12 0-21-9-20-21 0-8 5-15 12-18Z" fill="#66B89C" stroke="#2A1B12" stroke-width="4"/>
+  <path d="m270 130 7 7 14-17" stroke="#FFFDF7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m45 51 13 0M302 50h13" stroke="#FFFDF7" stroke-width="6" stroke-linecap="round"/>
+</svg>

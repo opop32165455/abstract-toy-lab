@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-20T01:23:26Z",
+  "items": {
+    "assets/icons/cat-paw.svg": {
+      "code": "ATL-ICONS-CAT-PAW-75B597",
+      "contentHash": "3fa76767e00f",
+      "status": "pending",
+      "tags": [
+        "animal",
+        "cat",
+        "paw",
+        "soft"
+      ],
+      "comment": "根据 IMG_2203.JPG 中右侧猫爪肉垫重绘：四颗圆趾垫、无黑色外框。本轮去除主掌垫下方的内凹尖角，改为完整连续的弧面。",
+      "updatedAt": "2026-08-20T01:23:26Z"
+    },
+    "assets/icons/dog-paw.svg": {
+      "code": "ATL-ICONS-DOG-PAW-6D03B7",
+      "contentHash": "b921b7866a22",
+      "status": "pending",
+      "tags": [
+        "animal",
+        "dog",
+        "paw",
+        "soft"
+      ],
+      "comment": "基于新猫爪的无边框视觉语言重绘：趾垫更纵长、主掌垫更宽。本轮去除主掌垫下方的内凹尖角，改为完整连续的弧面。",
+      "updatedAt": "2026-08-20T01:23:26Z"
+    },
+    "assets/components/check-in/check-in-success.svg": {
+      "code": "ATL-CHECK-IN-CHECK-IN-SUCCESS-BE8D42",
+      "contentHash": "d99605db437c",
+      "status": "pending",
+      "tags": ["check-in", "success", "hand-drawn"],
+      "comment": "根据全部作品 NO.001 批语重绘：移除五角星、放射线和底部弧线，只保留居中的成功印章与勾形。",
+      "updatedAt": "2026-08-20T01:23:26Z"
+    },
+    "assets/icons/calendar/calendar-day.svg": {
+      "code": "ATL-CALENDAR-CALENDAR-DAY-C4BD56",
+      "contentHash": "ec48fae22568",
+      "status": "pending",
+      "tags": ["calendar", "day", "hand-drawn"],
+      "comment": "根据全部作品 NO.008 批语重绘：移除难理解的标准圆环和放射短线，改为带手写数字 1 的单日撕页日历。本轮缩小数字并拉开与上下边线的距离。",
+      "updatedAt": "2026-08-20T01:23:26Z"
+    },
+    "assets/icons/calendar/calendar.svg": {
+      "code": "ATL-CALENDAR-CALENDAR-03C73A",
+      "contentHash": "9023daa59ac0",
+      "status": "pending",
+      "tags": ["calendar", "date", "hand-drawn"],
+      "comment": "第一轮将标准圆点改成明显异形色块；根据后续批语撤回石头感，现改为同一支圆头马克笔连续轻点形成的六个柔圆短笔触，只保留轻微方向差。",
+      "updatedAt": "2026-08-20T01:12:21Z"
+    },
+    "assets/icons/calendar/check-in-stamp.svg": {
+      "code": "ATL-CALENDAR-CHECK-IN-STAMP-3EA85C",
+      "contentHash": "ed0389eb190c",
+      "status": "pending",
+      "tags": ["check-in", "confirm", "hand-drawn"],
+      "comment": "根据全部作品 NO.010 批语增加约 10% 手绘感：轻调外轮廓、勾形节奏与放射线位置，不改变原有识别结构。",
+      "updatedAt": "2026-08-20T01:08:08Z"
+    },
+    "assets/icons/calendar/streak-flame.svg": {
+      "code": "ATL-CALENDAR-STREAK-FLAME-1EB145",
+      "contentHash": "c1e601eebda6",
+      "status": "pending",
+      "tags": ["check-in", "streak", "flame"],
+      "comment": "根据全部作品 NO.012 批语简化：保留连续打卡火苗的语义，去除容易被误读为多余线条的内部火焰。",
+      "updatedAt": "2026-08-20T01:23:26Z"
+    },
+    "assets/icons/purse.svg": {
+      "code": "ATL-ICONS-PURSE-0E888F",
+      "contentHash": "5d7cefa72694",
+      "status": "pending",
+      "tags": ["finance", "purse", "hand-drawn"],
+      "comment": "根据全部作品 NO.016 批语增加约 20% 手绘感：钱包主体、扣带和铆钉改为轻微不对称的不规则轮廓。",
+      "updatedAt": "2026-08-20T01:08:08Z"
+    },
+    "assets/icons/settings.svg": {
+      "code": "ATL-ICONS-SETTINGS-167439",
+      "contentHash": "158e0e35277f",
+      "status": "pending",
+      "tags": ["system", "settings", "hand-drawn"],
+      "comment": "根据全部作品 NO.017 批语重画：保留齿轮清晰度，每个齿的间距略有不同；去除顶部像错误笔画的连齿。",
+      "updatedAt": "2026-08-20T01:23:26Z"
+    },
+    "assets/icons/settle.svg": {
+      "code": "ATL-ICONS-SETTLE-A89BD1",
+      "contentHash": "300f3b92ef32",
+      "status": "pending",
+      "tags": ["finance", "settle", "hand-drawn"],
+      "comment": "根据全部作品 NO.018 批语增加约 20% 手绘感：打破天平完全镜像，横梁、秤盘和底座加入受控曲线与错位。",
+      "updatedAt": "2026-08-20T01:08:08Z"
+    },
+    "assets/icons/share.svg": {
+      "code": "ATL-ICONS-SHARE-D9D791",
+      "contentHash": "36d286702724",
+      "status": "pending",
+      "tags": ["action", "share", "hand-drawn"],
+      "comment": "根据全部作品 NO.019 批语修改：分享节点与连线改为轻微不规则的手绘轮廓，保留一眼可读的分享关系。",
+      "updatedAt": "2026-08-20T01:23:26Z"
+    },
+    "assets/icons/system/back.svg": {
+      "code": "ATL-SYSTEM-BACK-A32ACA",
+      "contentHash": "03d24e1803dc",
+      "status": "pending",
+      "tags": ["navigation", "back", "hand-drawn"],
+      "comment": "移除无语义黄色短线，调整为轮廓明确、略带手绘弧度的返回箭头。",
+      "updatedAt": "2026-08-20T01:01:20Z"
+    },
+    "assets/icons/system/close.svg": {
+      "code": "ATL-SYSTEM-CLOSE-7676FC",
+      "contentHash": "7e041c8046de",
+      "status": "pending",
+      "tags": ["action", "close", "hand-drawn"],
+      "comment": "移除装饰线后，本轮再轻调两个笔画的弧度和端点，让关闭叉保留手绘感但不影响识别。",
+      "updatedAt": "2026-08-20T01:23:26Z"
+    },
+    "assets/icons/system/check.svg": {
+      "code": "ATL-SYSTEM-CHECK-D26F68",
+      "contentHash": "1847ef608f4f",
+      "status": "pending",
+      "tags": ["action", "confirm", "hand-drawn"],
+      "comment": "移除内部绿色重复线，将勾形整理为单一连续动作轮廓。",
+      "updatedAt": "2026-08-20T01:01:20Z"
+    },
+    "assets/icons/system/download.svg": {
+      "code": "ATL-SYSTEM-DOWNLOAD-79B67C",
+      "contentHash": "32fd42789266",
+      "status": "pending",
+      "tags": ["action", "download", "hand-drawn"],
+      "comment": "移除箭头内部重复彩线，重新校正箭头与托盘的间距和识别度。",
+      "updatedAt": "2026-08-20T01:01:20Z"
+    },
+    "assets/icons/system/upload.svg": {
+      "code": "ATL-SYSTEM-UPLOAD-647725",
+      "contentHash": "244c7c2f279f",
+      "status": "pending",
+      "tags": ["action", "upload", "hand-drawn"],
+      "comment": "移除箭头内部重复彩线，重新校正箭头与托盘的间距和识别度。",
+      "updatedAt": "2026-08-20T01:01:20Z"
+    },
+    "assets/icons/system/forward.svg": {
+      "code": "ATL-SYSTEM-FORWARD-A987D6",
+      "contentHash": "59380698e6b6",
+      "status": "pending",
+      "tags": ["navigation", "forward", "hand-drawn"],
+      "comment": "移除无语义黄色短线，调整为轮廓明确、略带手绘弧度的前进箭头。",
+      "updatedAt": "2026-08-20T01:01:20Z"
+    },
+    "assets/icons/system/info-circle.svg": {
+      "code": "ATL-SYSTEM-INFO-CIRCLE-37CE44",
+      "contentHash": "28f46dfb2fc2",
+      "status": "pending",
+      "tags": ["status", "information", "soft-shape"],
+      "comment": "将规则圆形改为轻微不对称的软胶贴纸轮廓，信息圆点改为手绘豆形。",
+      "updatedAt": "2026-08-20T01:01:20Z"
+    },
+    "assets/icons/system/menu.svg": {
+      "code": "ATL-SYSTEM-MENU-DABCDE",
+      "contentHash": "bab5e02b70bb",
+      "status": "pending",
+      "tags": ["navigation", "menu", "hand-drawn"],
+      "comment": "根据全部作品 NO.030 批语移除黄色短线，保留三条长度和节奏略有不同的菜单横线。",
+      "updatedAt": "2026-08-20T01:23:26Z"
+    },
+    "assets/icons/system/refresh.svg": {
+      "code": "ATL-SYSTEM-REFRESH-FC5E6C",
+      "contentHash": "84b915891a11",
+      "status": "pending",
+      "tags": ["action", "refresh", "hand-drawn"],
+      "comment": "根据全部作品 NO.032 批语再次重构：箭头改为与圆弧分离的短笔画，避免箭头与主线重合。",
+      "updatedAt": "2026-08-20T01:23:26Z"
+    },
+    "assets/icons/system/warning.svg": {
+      "code": "ATL-SYSTEM-WARNING-28EB8F",
+      "contentHash": "a578dc6cefd7",
+      "status": "pending",
+      "tags": ["status", "warning", "hand-drawn"],
+      "comment": "根据全部作品 NO.036 批语加强手绘感：软三角三个边的长度和曲线节奏不完全相同，叹号圆点保持不规则色块。",
+      "updatedAt": "2026-08-20T01:23:26Z"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Abstract Toy Lab / AB Purse base palette",
+  "updatedAt": "2026-08-19T00:00:00.000Z",
+  "tokens": {
+    "paper": { "hex": "#FFF8E8", "role": "main warm background" },
+    "paperLight": { "hex": "#FFFDF7", "role": "surface and card background" },
+    "ink": { "hex": "#2A1B12", "role": "text, outline, and primary contrast" },
+    "yellow": { "hex": "#FFC94D", "role": "primary playful accent" },
+    "pink": { "hex": "#F39AA9", "role": "soft character accent" },
+    "coral": { "hex": "#F58A78", "role": "warm action and emphasis accent" },
+    "mint": { "hex": "#66B89C", "role": "positive approval and secondary accent" }
+  }
+}
