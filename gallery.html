@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abstract Toy Lab 设计资产展示与下载">
+    <title>Abstract Toy Lab · 资产画廊</title>
+    <style>
+      @font-face {
+        font-family: "AB ZCOOL KuaiLe";
+        src: url("assets/fonts/ZCOOLKuaiLe-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "AB Baloo 2";
+        src: url("assets/fonts/Baloo2-Bold.ttf") format("truetype");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      :root {
+        --paper: #fff8e8;
+        --paper-light: #fffdf7;
+        --ink: #2a1b12;
+        --red: #f58a78;
+        --yellow: #ffc94d;
+        --mint: #66b89c;
+        --muted: #746f62;
+        --line: 2px solid var(--ink);
+        --display: "AB ZCOOL KuaiLe", cursive;
+        --mono: "AB Baloo 2", "AB ZCOOL KuaiLe", cursive;
+      }
+
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      html { background: var(--paper); color: var(--ink); }
+
+      body {
+        min-height: 100vh;
+        font-family: var(--mono);
+        background:
+          linear-gradient(90deg, transparent 0 49.8%, rgba(25, 27, 24, .025) 50% 50.2%, transparent 50.2%),
+          var(--paper);
+      }
+
+      button, input, select { font: inherit; color: inherit; }
+
+      /* ── noise overlay ── */
+      .paper-noise {
+        position: fixed; inset: 0; pointer-events: none; opacity: .34; z-index: 10;
+        background-image: radial-gradient(circle at 20% 30%, rgba(25, 27, 24, .11) 0 .5px, transparent .8px);
+        background-size: 5px 7px; mix-blend-mode: multiply;
+      }
+
+      /* ── header ── */
+      .masthead {
+        min-height: 126px; padding: 24px clamp(22px, 4vw, 64px) 20px;
+        display: flex; justify-content: space-between; align-items: flex-end;
+        border-bottom: var(--line); position: relative; overflow: hidden;
+      }
+      .masthead::after {
+        content: "GALLERY / 展示"; position: absolute; right: -24px; top: 34px;
+        transform: rotate(6deg); font: 600 clamp(14px, 1.6vw, 23px)/1 var(--mono);
+        color: var(--mint); border: 3px solid var(--mint); padding: 9px 18px; opacity: .86;
+      }
+      .eyebrow { margin: 0 0 9px; font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
+      h1 { font-family: var(--display); font-weight: 400; text-transform: uppercase; margin: 0; max-width: 900px; font-size: clamp(35px, 5.3vw, 72px); line-height: .87; letter-spacing: .005em; }
+      h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase; margin: 0; font-size: clamp(28px, 4vw, 50px); line-height: .9; }
+      .header-note { margin: 0 9vw 4px 0; font-size: 11px; }
+
+      /* ── toolbar ── */
+      .toolbar-strip {
+        display: flex; flex-wrap: wrap; gap: 10px; align-items: end;
+        padding: 18px clamp(22px, 4vw, 64px); border-bottom: var(--line); background: var(--paper-light);
+      }
+      .toolbar-strip label { display: grid; gap: 5px; font-size: 9px; font-weight: 600; letter-spacing: .1em; }
+      .toolbar-strip input, .toolbar-strip select {
+        height: 35px; padding: 0 10px; border: var(--line); background: var(--paper-light); border-radius: 0;
+      }
+      .toolbar-strip input:focus, .toolbar-strip select:focus { outline: 3px solid var(--yellow); outline-offset: 1px; }
+      .toolbar-strip input[type="search"] { width: clamp(180px, 30vw, 320px); }
+      .count-chip {
+        display: inline-grid; place-items: center; min-width: 33px; height: 28px; padding: 0 8px;
+        background: var(--yellow); border: var(--line); border-radius: 50%; font-size: 12px; font-weight: 600;
+        align-self: end;
+      }
+
+      /* ── grid ── */
+      .gallery-wrap { padding: 35px clamp(22px, 4vw, 64px) 70px; }
+      .section-intro { display: flex; justify-content: space-between; align-items: end; gap: 30px; margin-bottom: 28px; }
+      .section-copy { max-width: 400px; font-size: 12px; line-height: 1.7; color: var(--muted); }
+
+      .asset-grid {
+        display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 25px 18px; align-items: start;
+      }
+      .asset-card {
+        --tilt: -1deg; border: var(--line); background: var(--paper-light);
+        transform: rotate(var(--tilt)); box-shadow: 5px 6px 0 var(--ink);
+        transition: transform .18s ease, box-shadow .18s ease;
+      }
+      .asset-card:nth-child(3n + 2) { --tilt: .75deg; margin-top: 13px; }
+      .asset-card:nth-child(4n) { --tilt: -1.6deg; }
+      .asset-card:hover { transform: rotate(0) translateY(-4px); box-shadow: 7px 9px 0 var(--ink); }
+
+      .asset-preview {
+        display: grid; place-items: center; height: 190px; margin: 0; cursor: pointer;
+        background-color: #fff;
+        background-image: linear-gradient(45deg, #eee 25%, transparent 25%), linear-gradient(-45deg, #eee 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #eee 75%), linear-gradient(-45deg, transparent 75%, #eee 75%);
+        background-size: 18px 18px; background-position: 0 0, 0 9px, 9px -9px, -9px 0;
+      }
+      .asset-preview img { display: block; max-width: 75%; max-height: 72%; object-fit: contain; filter: drop-shadow(0 5px 4px rgba(25, 27, 24, .13)); }
+
+      .asset-info { padding: 13px 13px 10px; }
+      .asset-name { display: block; font-size: 15px; font-weight: 700; overflow-wrap: anywhere; }
+      .asset-path { display: block; margin-top: 3px; font-size: 9px; color: var(--muted); overflow-wrap: anywhere; }
+      .asset-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 7px; }
+      .asset-tag { padding: 2px 6px; border: 1px solid var(--ink); font-size: 8px; font-weight: 600; text-transform: uppercase; background: var(--paper); }
+
+      .asset-footer {
+        display: flex; justify-content: space-between; align-items: center; gap: 8px;
+        border-top: 1px dashed var(--ink); padding: 9px 13px;
+      }
+      .code-label { font-size: 9px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+      .download-btn {
+        flex: 0 0 auto; padding: 5px 10px; border: var(--line); background: var(--mint);
+        cursor: pointer; font-size: 9px; font-weight: 700; text-decoration: none; color: var(--ink);
+        box-shadow: 2px 2px 0 var(--ink); transition: transform .12s, box-shadow .12s;
+      }
+      .download-btn:active { transform: translate(2px, 2px); box-shadow: none; }
+
+      .empty-state {
+        border: 2px dashed var(--ink); padding: 70px 25px; text-align: center; transform: rotate(-.5deg);
+      }
+      .empty-state strong, .empty-state span { display: block; }
+      .empty-state span { margin-top: 8px; color: var(--muted); font-size: 12px; }
+
+      /* ── lightbox ── */
+      .lightbox {
+        position: fixed; inset: 0; z-index: 100; display: none; place-items: center;
+        background: rgba(25, 27, 24, .78); backdrop-filter: blur(4px);
+      }
+      .lightbox.open { display: grid; }
+      .lightbox-inner {
+        position: relative; max-width: min(900px, calc(100vw - 40px)); max-height: calc(100vh - 80px);
+        padding: 38px; border: 3px solid var(--ink); background: var(--paper-light);
+        box-shadow: 13px 15px 0 var(--ink); text-align: center;
+      }
+      .lightbox-close {
+        position: absolute; z-index: 2; right: -12px; top: -14px; border: var(--line);
+        background: var(--red); color: white; padding: 8px 11px; cursor: pointer;
+        transform: rotate(2deg); font-size: 10px; font-weight: 600;
+      }
+      .lightbox-img {
+        max-width: 100%; max-height: calc(100vh - 240px); object-fit: contain;
+        background-color: #fff;
+        background-image: linear-gradient(45deg, #eee 25%, transparent 25%), linear-gradient(-45deg, #eee 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #eee 75%), linear-gradient(-45deg, transparent 75%, #eee 75%);
+        background-size: 24px 24px; background-position: 0 0, 0 12px, 12px -12px, -12px 0;
+        padding: 24px; border: var(--line);
+      }
+      .lightbox-meta { margin-top: 16px; font-size: 12px; }
+      .lightbox-meta strong { font-size: 18px; display: block; margin-bottom: 4px; font-family: var(--display); }
+      .lightbox-meta code { display: block; margin: 8px auto; font-size: 10px; color: var(--muted); }
+      .lightbox-download {
+        display: inline-block; margin-top: 14px; padding: 10px 20px; border: var(--line);
+        background: var(--mint); cursor: pointer; font-size: 11px; font-weight: 700;
+        text-decoration: none; color: var(--ink);
+        box-shadow: 4px 4px 0 var(--ink); transition: transform .12s, box-shadow .12s;
+      }
+      .lightbox-download:active { transform: translate(4px, 4px); box-shadow: none; }
+
+      /* ── footer ── */
+      .site-footer {
+        padding: 20px clamp(22px, 4vw, 64px); border-top: var(--line);
+        font-size: 10px; color: var(--muted); text-align: center;
+      }
+      .site-footer a { color: var(--red); }
+
+      /* ── responsive ── */
+      @media (max-width: 640px) {
+        .masthead { flex-direction: column; align-items: flex-start; gap: 12px; min-height: auto; }
+        .masthead::after { display: none; }
+        .header-note { margin-right: 0; }
+        .asset-grid { grid-template-columns: 1fr 1fr; gap: 14px 10px; }
+        .asset-preview { height: 140px; }
+        .section-intro { flex-direction: column; align-items: flex-start; }
+        .toolbar-strip { gap: 8px; }
+        .toolbar-strip input[type="search"] { width: 100%; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="paper-noise" aria-hidden="true"></div>
+
+    <header class="masthead">
+      <div>
+        <p class="eyebrow">ASSET GALLERY / 资产画廊</p>
+        <h1>ABSTRACT TOY LAB</h1>
+      </div>
+      <p class="header-note">浏览 · 预览 · 下载</p>
+    </header>
+
+    <div class="toolbar-strip">
+      <label>
+        <span>SEARCH</span>
+        <input id="searchInput" type="search" placeholder="名称、Code 或标签" autocomplete="off">
+      </label>
+      <label>
+        <span>CATEGORY</span>
+        <select id="categoryFilter">
+          <option value="all">全部分类</option>
+        </select>
+      </label>
+      <span id="assetCount" class="count-chip">0</span>
+    </div>
+
+    <main class="gallery-wrap">
+      <div class="section-intro">
+        <div>
+          <p class="eyebrow" id="currentCategory">ALL ASSETS</p>
+          <h2>资产画廊</h2>
+        </div>
+        <p class="section-copy">Abstract Toy Lab 的全部设计资产。点击预览，右下角按钮下载 SVG 原件。</p>
+      </div>
+
+      <div id="assetGrid" class="asset-grid"></div>
+      <div id="emptyState" class="empty-state" hidden>
+        <strong>没有找到匹配的资产</strong>
+        <span>试试换个关键词？</span>
+      </div>
+    </main>
+
+    <!-- lightbox -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
+      <div class="lightbox-inner">
+        <button id="lightboxClose" class="lightbox-close" type="button">CLOSE</button>
+        <img id="lightboxImg" class="lightbox-img" alt="">
+        <div class="lightbox-meta">
+          <strong id="lightboxName"></strong>
+          <code id="lightboxCode"></code>
+          <a id="lightboxDownload" class="lightbox-download" download>下载原件</a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      Abstract Toy Lab — 抽象玩具研究所 · <a href="https://github.com/opop32165455/abstract-toy-lab" target="_blank" rel="noopener">GitHub</a>
+    </footer>
+
+    <script src="data/catalog.js"></script>
+    <script src="data/reviews.js"></script>
+    <script>
+      (() => {
+        'use strict';
+
+        const catalog = window.ABSTRACT_TOY_LAB_CATALOG;
+        const reviews = window.ABSTRACT_TOY_LAB_REVIEWS;
+        const items = catalog?.items ?? [];
+
+        // ── DOM refs ──
+        const grid = document.getElementById('assetGrid');
+        const emptyState = document.getElementById('emptyState');
+        const countChip = document.getElementById('assetCount');
+        const searchInput = document.getElementById('searchInput');
+        const categoryFilter = document.getElementById('categoryFilter');
+        const currentCategory = document.getElementById('currentCategory');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxName = document.getElementById('lightboxName');
+        const lightboxCode = document.getElementById('lightboxCode');
+        const lightboxDownload = document.getElementById('lightboxDownload');
+        const lightboxClose = document.getElementById('lightboxClose');
+
+        // ── build category set ──
+        const categories = new Set();
+        items.forEach(it => {
+          const dir = it.directory.replace(/^assets\/?/, '') || 'root';
+          categories.add(dir);
+        });
+        [...categories].sort().forEach(cat => {
+          const opt = document.createElement('option');
+          opt.value = cat;
+          opt.textContent = cat;
+          categoryFilter.appendChild(opt);
+        });
+
+        // ── get tags for an item ──
+        function getTags(item) {
+          const review = reviews?.items?.[item.path];
+          if (review?.tags?.length) return review.tags;
+          return item.defaultTags ?? [];
+        }
+
+        // ── render ──
+        function render() {
+          const query = searchInput.value.trim().toLowerCase();
+          const cat = categoryFilter.value;
+
+          const filtered = items.filter(it => {
+            const dir = it.directory.replace(/^assets\/?/, '') || 'root';
+            if (cat !== 'all' && dir !== cat) return false;
+            if (query) {
+              const tags = getTags(it);
+              const haystack = [it.name, it.code, it.path, ...tags].join(' ').toLowerCase();
+              if (!haystack.includes(query)) return false;
+            }
+            return true;
+          });
+
+          currentCategory.textContent = cat === 'all' ? 'ALL ASSETS' : cat.toUpperCase();
+          countChip.textContent = filtered.length;
+          grid.innerHTML = '';
+
+          if (!filtered.length) {
+            emptyState.hidden = false;
+            return;
+          }
+          emptyState.hidden = true;
+
+          filtered.forEach((it, i) => {
+            const tags = getTags(it);
+            const card = document.createElement('article');
+            card.className = 'asset-card';
+
+            card.innerHTML = `
+              <div class="asset-preview" data-idx="${i}" data-path="${it.path}" data-name="${it.name}" data-code="${it.code}">
+                <img src="${it.url}" alt="${it.name}" loading="lazy">
+              </div>
+              <div class="asset-info">
+                <span class="asset-name">${it.name}.${it.extension}</span>
+                <span class="asset-path">${it.path}</span>
+                ${tags.length ? `<div class="asset-tags">${tags.map(t => `<span class="asset-tag">${t}</span>`).join('')}</div>` : ''}
+              </div>
+              <div class="asset-footer">
+                <span class="code-label">${it.code}</span>
+                <a class="download-btn" href="${it.path}" download="${it.name}.${it.extension}">下载</a>
+              </div>
+            `;
+            grid.appendChild(card);
+          });
+        }
+
+        // ── lightbox ──
+        grid.addEventListener('click', e => {
+          const preview = e.target.closest('.asset-preview');
+          if (!preview) return;
+          const path = preview.dataset.path;
+          const name = preview.dataset.name;
+          const code = preview.dataset.code;
+          lightboxImg.src = path;
+          lightboxImg.alt = name;
+          lightboxName.textContent = name;
+          lightboxCode.textContent = code;
+          lightboxDownload.href = path;
+          lightboxDownload.download = path.split('/').pop();
+          lightbox.classList.add('open');
+          document.body.style.overflow = 'hidden';
+        });
+
+        function closeLightbox() {
+          lightbox.classList.remove('open');
+          document.body.style.overflow = '';
+        }
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+        // ── events ──
+        searchInput.addEventListener('input', render);
+        categoryFilter.addEventListener('change', render);
+
+        // ── init ──
+        render();
+      })();
+    </script>
+  </body>
+</html>
