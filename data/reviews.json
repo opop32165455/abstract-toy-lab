@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-20T01:23:26Z",
+  "updatedAt": "2026-08-20T04:38:15Z",
   "items": {
     "assets/icons/cat-paw.svg": {
       "code": "ATL-ICONS-CAT-PAW-75B597",
-      "contentHash": "3fa76767e00f",
+      "contentHash": "3c17ec2616f7",
       "status": "pending",
       "tags": [
         "animal",
@@ -12,12 +12,12 @@
         "paw",
         "soft"
       ],
-      "comment": "根据 IMG_2203.JPG 中右侧猫爪肉垫重绘：四颗圆趾垫、无黑色外框。本轮去除主掌垫下方的内凹尖角，改为完整连续的弧面。",
-      "updatedAt": "2026-08-20T01:23:26Z"
+      "comment": "根据 Snipaste_2026-08-20_13-22-15.png 精细重绘：四颗较大、不等形的手绘趾垫；主掌垫明显缩小并横向压扁，呈柔和圆角三角。本轮保持大小不变，将主掌垫上移 1.8 个画布单位以缩短中间留白。仅使用灰粉色块、透明背景、无描边。",
+      "updatedAt": "2026-08-20T04:27:03Z"
     },
     "assets/icons/dog-paw.svg": {
       "code": "ATL-ICONS-DOG-PAW-6D03B7",
-      "contentHash": "b921b7866a22",
+      "contentHash": "fcf6c446b2ea",
       "status": "pending",
       "tags": [
         "animal",
@@ -25,8 +25,8 @@
         "paw",
         "soft"
       ],
-      "comment": "基于新猫爪的无边框视觉语言重绘：趾垫更纵长、主掌垫更宽。本轮去除主掌垫下方的内凹尖角，改为完整连续的弧面。",
-      "updatedAt": "2026-08-20T01:23:26Z"
+      "comment": "在已确认的猫爪风格上增加轻微物种区分：狗爪的四颗趾垫改为更平稳、近似左右对称的排列，外侧趾垫略低；主掌垫横向加宽并压扁，以柔和双肩衔接、底边保持完整圆弧。继续使用单一暖珊瑚色块、透明背景、无描边。本轮按批语移除主肉垫顶部凹槽，改为顶部连续、整体圆润的宽三角形。随后参考猫爪将顶部进一步钝化为宽弧，并把肉垫上缘提高约 2 个画布单位，缩短与趾垫的留白。本轮重构主肉垫闭合路径，消除左上方控制点衔接造成的细小尖角，保持既有尺寸与间距。",
+      "updatedAt": "2026-08-20T04:38:15Z"
     },
     "assets/components/check-in/check-in-success.svg": {
       "code": "ATL-CHECK-IN-CHECK-IN-SUCCESS-BE8D42",
@@ -78,11 +78,11 @@
     },
     "assets/icons/settings.svg": {
       "code": "ATL-ICONS-SETTINGS-167439",
-      "contentHash": "158e0e35277f",
+      "contentHash": "b640cb39b431",
       "status": "pending",
       "tags": ["system", "settings", "hand-drawn"],
-      "comment": "根据全部作品 NO.017 批语重画：保留齿轮清晰度，每个齿的间距略有不同；去除顶部像错误笔画的连齿。",
-      "updatedAt": "2026-08-20T01:23:26Z"
+      "comment": "根据全部作品 NO.017 批语重画：恢复传统方形钝齿结构，齿宽和齿距略有变化；无尖刺、连齿或断裂。",
+      "updatedAt": "2026-08-20T04:19:52Z"
     },
     "assets/icons/settle.svg": {
       "code": "ATL-ICONS-SETTLE-A89BD1",
@@ -110,11 +110,11 @@
     },
     "assets/icons/system/close.svg": {
       "code": "ATL-SYSTEM-CLOSE-7676FC",
-      "contentHash": "7e041c8046de",
+      "contentHash": "90e7b426de8b",
       "status": "pending",
       "tags": ["action", "close", "hand-drawn"],
-      "comment": "移除装饰线后，本轮再轻调两个笔画的弧度和端点，让关闭叉保留手绘感但不影响识别。",
-      "updatedAt": "2026-08-20T01:23:26Z"
+      "comment": "移除装饰线后，再调整两个笔画的长度、弧度和端点，让关闭叉保留受控手绘感。",
+      "updatedAt": "2026-08-20T04:12:27Z"
     },
     "assets/icons/system/check.svg": {
       "code": "ATL-SYSTEM-CHECK-D26F68",
@@ -166,11 +166,11 @@
     },
     "assets/icons/system/refresh.svg": {
       "code": "ATL-SYSTEM-REFRESH-FC5E6C",
-      "contentHash": "84b915891a11",
+      "contentHash": "e765b7934be0",
       "status": "pending",
       "tags": ["action", "refresh", "hand-drawn"],
-      "comment": "根据全部作品 NO.032 批语再次重构：箭头改为与圆弧分离的短笔画，避免箭头与主线重合。",
-      "updatedAt": "2026-08-20T01:23:26Z"
+      "comment": "根据全部作品 NO.032 批语再次重构：圆弧与实体小箭头保留间隙，避免重叠且清楚表达循环方向。",
+      "updatedAt": "2026-08-20T04:12:27Z"
     },
     "assets/icons/system/warning.svg": {
       "code": "ATL-SYSTEM-WARNING-28EB8F",
