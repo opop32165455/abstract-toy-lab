@@ -28,6 +28,7 @@ function renderTree() {
 function filteredItems() { const query = state.query.trim().toLowerCase(); return state.catalog.filter((item) => { const review = reviewFor(item); const inDirectory = state.directory === "all" || item.directory === state.directory || item.directory.startsWith(`${state.directory}/`); const inStatus = state.status === "all" || review.status === state.status; const terms = [item.code, item.name, item.path, ...(review.tags || [])].join(" ").toLowerCase(); return inDirectory && inStatus && (!query || terms.includes(query)); }); }
 function renderCards() {
   const items = filteredItems(); el.assetGrid.replaceChildren(); el.emptyState.hidden = items.length > 0;
+  const stampItem = state.catalog.find((it) => it.code.startsWith("ATL-CALENDAR-CHECK-IN-STAMP")) || { url: "assets/icons/calendar/check-in-stamp.svg" };
   items.forEach((item, index) => {
     const review = reviewFor(item), card = el.assetCardTemplate.content.firstElementChild.cloneNode(true); card.dataset.status = review.status;
     card.querySelector(".asset-number").textContent = `NO. ${String(index + 1).padStart(3, "0")} / ${item.kind.toUpperCase()}`;
@@ -36,13 +37,16 @@ function renderCards() {
     const copy = card.querySelector(".copy-code"); copy.textContent = item.code; copy.title = `复制 ${item.code}`; copy.addEventListener("click", () => copyCode(item.code, copy));
     const approveBtn = card.querySelector(".quick-approve-btn");
     if (approveBtn) {
+      const stampImg = approveBtn.querySelector(".quick-stamp-icon");
+      if (stampImg) stampImg.src = stampItem.url;
+      const stampText = approveBtn.querySelector(".quick-stamp-text");
       if (review.status === "approved") {
         approveBtn.classList.add("is-approved");
-        approveBtn.textContent = "✓ 已通过";
+        if (stampText) stampText.textContent = "已通过";
         approveBtn.title = "已确认通过（点击设为待审批）";
       } else {
         approveBtn.classList.remove("is-approved");
-        approveBtn.textContent = "✓ 确认";
+        if (stampText) stampText.textContent = "确认";
         approveBtn.title = "一键确认通过";
       }
       approveBtn.addEventListener("click", (event) => {
