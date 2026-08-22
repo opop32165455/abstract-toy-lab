@@ -1,6 +1,6 @@
 window.ABSTRACT_TOY_LAB_CATALOG = {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-22T06:57:38.696Z",
+  "generatedAt": "2026-08-22T07:00:06.346Z",
   "roots": [
     "assets"
   ],
@@ -176,12 +176,12 @@ window.ABSTRACT_TOY_LAB_CATALOG = {
     {
       "code": "ATL-ICONS-CAT-PAW-75B597",
       "path": "assets/icons/cat-paw.svg",
-      "url": "assets/icons/cat-paw.svg?v=a6e6d471f2d6",
+      "url": "assets/icons/cat-paw.svg?v=e6d290e06025",
       "directory": "assets/icons",
       "name": "cat-paw",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "a6e6d471f2d6",
+      "contentHash": "e6d290e06025",
       "defaultTags": [
         "icons",
         "vector"
@@ -204,12 +204,12 @@ window.ABSTRACT_TOY_LAB_CATALOG = {
     {
       "code": "ATL-ICONS-DOG-PAW-6D03B7",
       "path": "assets/icons/dog-paw.svg",
-      "url": "assets/icons/dog-paw.svg?v=6454e7f9e0b8",
+      "url": "assets/icons/dog-paw.svg?v=4be8105de768",
       "directory": "assets/icons",
       "name": "dog-paw",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "6454e7f9e0b8",
+      "contentHash": "4be8105de768",
       "defaultTags": [
         "icons",
         "vector"
