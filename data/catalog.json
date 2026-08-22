@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-20T04:58:12.964Z",
+  "generatedAt": "2026-08-22T06:57:38.696Z",
   "roots": [
     "assets"
   ],
@@ -176,12 +176,12 @@
     {
       "code": "ATL-ICONS-CAT-PAW-75B597",
       "path": "assets/icons/cat-paw.svg",
-      "url": "assets/icons/cat-paw.svg?v=3c17ec2616f7",
+      "url": "assets/icons/cat-paw.svg?v=a6e6d471f2d6",
       "directory": "assets/icons",
       "name": "cat-paw",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "3c17ec2616f7",
+      "contentHash": "a6e6d471f2d6",
       "defaultTags": [
         "icons",
         "vector"
@@ -204,12 +204,12 @@
     {
       "code": "ATL-ICONS-DOG-PAW-6D03B7",
       "path": "assets/icons/dog-paw.svg",
-      "url": "assets/icons/dog-paw.svg?v=fcf6c446b2ea",
+      "url": "assets/icons/dog-paw.svg?v=6454e7f9e0b8",
       "directory": "assets/icons",
       "name": "dog-paw",
       "extension": "svg",
       "kind": "svg",
-      "contentHash": "fcf6c446b2ea",
+      "contentHash": "6454e7f9e0b8",
       "defaultTags": [
         "icons",
         "vector"
